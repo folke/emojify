@@ -1,0 +1,23 @@
+{
+  "name": "emojify",
+  "version": "1.0.0",
+  "description": "command line tool to convert emojis between unicode characters and :smile: codes",
+  "bin": {
+    "emojify": "index.js"
+  },
+  "repository": "http://github.com/folke/emojify",
+  "author": "Folke <folke.lemaitre@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-emoji": "^1.10.0",
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.6.0",
+    "typescript": "^3.7.4"
+  }
+}
