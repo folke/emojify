@@ -5,7 +5,7 @@
   "bin": {
     "emojify": "bin/emojify.js"
   },
-  "repository": "http://github.com/folke/emojify",
+  "repository": "http://github.com/folke/emojify-cli",
   "author": "Folke <folke.lemaitre@gmail.com>",
   "license": "MIT",
   "scripts": {
