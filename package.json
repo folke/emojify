@@ -1,6 +1,6 @@
 {
   "name": "emojify-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "command line tool to convert emojis between unicode characters and :smile: codes",
   "bin": {
     "emojify": "bin/emojify.js"
