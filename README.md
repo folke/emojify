@@ -10,7 +10,15 @@ Options:
   -h, --help     output usage information
 ```
 
-I mainly created this to properly see [Gitmoji](https://gitmoji.carloscuesta.me/) emojis in git logs.
+Install with `npm` or `yarn`
+
+```sh
+npm install -g emojify-cli
+yarn global install emojify-cli
 ```
+
+I mainly created this to properly see [Gitmoji](https://gitmoji.carloscuesta.me/) emojis in git logs.
+
+```sh
 git log --color | emojify | less -rXF
 ```

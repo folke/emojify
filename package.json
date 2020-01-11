@@ -39,5 +39,16 @@
     "ts-jest": "^24.3.0",
     "ts-node": "^8.6.1",
     "typescript": "^3.7.4"
-  }
+  },
+  "keywords": [
+    "emoji",
+    "emojify",
+    "cli",
+    "console",
+    "terminal",
+    "command-line",
+    "logging",
+    "gitmoji",
+    "git-log"
+  ]
 }
