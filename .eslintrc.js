@@ -6,6 +6,10 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:jest/recommended",
+    "plugin:jest/style",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
     "prettier",
     "prettier/@typescript-eslint"
   ],
@@ -14,13 +18,10 @@ module.exports = {
     browser: false,
     jest: true
   },
-  plugins: ["@typescript-eslint", "prettier", "jest"],
+  plugins: ["@typescript-eslint", "prettier", "jest", "import"],
   parserOptions: {
     ecmaVersion: 2019, // Allows for the parsing of modern ECMAScript features
     sourceType: "module", // Allows for the use of imports
-    ecmaFeatures: {
-      jsx: true // Allows for the parsing of JSX
-    },
     project: "./tsconfig.json",
     impliedStrict: true
   },
@@ -33,7 +34,7 @@ module.exports = {
     ],
     "@typescript-eslint/explicit-function-return-type": "off",
     "jest/expect-expect": [
-      "warn",
+      "error",
       {
         assertFunctionNames: ["expect", "request.get.expect"]
       }

@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import readline = require("readline")
 import emoji = require("node-emoji")
 import program = require("commander")
@@ -11,18 +9,17 @@ program
     if (process.stdin.isTTY) {
       if (text === undefined) {
         program.outputHelp()
-      } else process.stdout.write(emoji.emojify(text) + "\n")
+        process.exit(1)
+      } else console.log(emoji.emojify(text))
     } else {
       const rl = readline.createInterface({
         input: process.stdin,
-        output: process.stdout,
         terminal: false
       })
 
       rl.on("line", function(line) {
-        process.stdout.write(emoji.emojify(line) + "\n")
+        console.log(emoji.emojify(line))
       })
     }
   })
-
-program.parse(process.argv)
+  .parse(process.argv)
