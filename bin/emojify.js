@@ -1,3 +1,4 @@
 #!/usr/bin/env node
 
-require("../lib/emojify")
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require("../lib/emojify").emojify()
